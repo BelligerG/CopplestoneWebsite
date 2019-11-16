@@ -7,9 +7,10 @@ if($_POST) {
     $queryType = "";
     $subject = "";
     
+    
     if(isset($_POST['name'])) {
         $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-    }
+    } 
     
     if(isset($_POST['eAddress'])) {
         $eAddress = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['eAddress']);

@@ -9,6 +9,10 @@ body {
     font-family: Arial;
 }
 
+
+a:link {
+    color: cornflowerblue;
+}
 #welcome {
     margin:0;
     top:0;

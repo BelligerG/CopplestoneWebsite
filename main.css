@@ -261,3 +261,9 @@ iframe {
   from {transform:scale(0)}
   to {transform:scale(1)}
 }
+
+hr {
+    width: 60%;
+    color: grey;
+    margin-left: 10%;
+}

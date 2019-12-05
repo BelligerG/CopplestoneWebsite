@@ -19,14 +19,14 @@ a:link {
     left:0;
     background-size: cover;
     
-    background-image: url('images/congregation.jpg');
+    background-image: url('images/church_cong.png');
     background-position: center top;
     background-repeat: no-repeat;
     padding:0;
     width: 100%;
     height: 100vh;
     
-    color: white;
+    color: #EDEDED;
     text-align: center;
     
     display: table;

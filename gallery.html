@@ -41,87 +41,33 @@
         <div id="information-wrapper">
             <div id="information-image"></div>
             <div id="information-text">
+        
                 <h1>Photos</h1>
-
                 
-                <div id="modalScreen">
-                    <div class="modalImage">
-                        <span id="modalClose" onclick="closeModal()">&times;</span>
-                        <span id="prev" onclick="prev()">&#10094;</span>
-                        <span id="next" onclick="next()">&#10095;</span>
-                        
-                        
-                        <div class="img-container" style="width:100%">
-                            <img src="images/IMG_9455.jpg">
-                        </div> 
-                        <div class="img-container" >
-                            <img src="images/IMG_9456.jpg">
-                        </div> 
-                        <div class="img-container" >
-                            <img src="images/IMG_9542.jpg">
-                        </div> 
-                        <div class="img-container" >
-                            <img src="images/IMG_9480.jpg">
-                        </div> 
-                        <div class="img-container" >
-                            <img src="images/IMG_9461.jpg">
-                        </div>
-                        <div class="img-container" >
-                            <img src="images/cafe.jpg">
-                        </div>                    
-                        <div class="img-container" >
-                            <img src="images/20120712_1103141.jpg">
-                        </div>
-                        <div class="img-container" >
-                            <img src="images/IMG_1091.jpg">
-                        </div>
-                        <div class="img-container" >
-                            <img src="images/IMG_1092.jpg">
-                        </div>
-                        <div class="img-container" >
-                            <img src="images/014.jpg">
-                        </div>
-                        <div class="img-container" >
-                            <img src="images/IMG_6623-300x225.jpg">
-                        </div>
-                        <div class="img-container" >
-                            <img src="images/IMG_6624-300x225.jpg">
-                        </div>
-                        <div class="img-container" >
-                            <img src="images/IMG_6651-300x225.jpg">
-                        </div>
-                        <div class="img-container" >
-                            <img src="images/IMG_6658-300x225.jpg">
-                        </div>
-                        <div class="img-container" >
-                            <img src="images/IMG_6716-300x225.jpg">
-                        </div>
-                    </div>
-                </div>
-                    
-                    
-                    <h3>Church Away Weekend</h3>
+                
+                
+                <h3>Church Away Weekend</h3>
                     
                     <div class="row1">
                         <div class="column1">
                             <img src="images/IMG_9455-150x150.jpg"
-                                 onclick="openModal();showSlides(0)">
+                                 onclick="openModal();currentSlide(1)">
                         </div> 
                         <div class="column1">
                             <img src="images/IMG_9456-150x150.jpg"
-                                 onclick="openModal();showSlides(1)"> 
+                                 onclick="openModal();currentSlide(2)"> 
                         </div>
                         <div class="column1">
                             <img src="images/IMG_9542-150x150.jpg"
-                                 onclick="openModal();showSlides(2)">
+                                 onclick="openModal();currentSlide(3)">
                         </div>
                         <div class="column1">
                             <img src="images/IMG_9480-150x150.jpg"
-                                 onclick="openModal();showSlides(3)">
+                                 onclick="openModal();currentSlide(4)">
                         </div> 
                         <div class="column1">
                             <img src="images/IMG_9461-150x150.jpg"
-                                 onclick="openModal();showSlides(4)">
+                                 onclick="openModal();currentSlide(5)">
                         </div>
                         
                     </div> 
@@ -131,23 +77,23 @@
                     <div class="row1">
                         <div class="column1">
                             <img src="images/cafe-150x150.jpg"
-                                 onclick="openModal();showSlides(5)">
+                                 onclick="openModal();currentSlide(6)">
                         </div> 
                         <div class="column1">
                             <img src="images/20120712_1103141-150x150.jpg"
-                                 onclick="openModal();showSlides(6)">
+                                 onclick="openModal();currentSlide(7)">
                         </div>
                         <div class="column1">
                             <img src="images/IMG_1091-150x150.jpg"
-                                 onclick="openModal();showSlides(7)">
+                                 onclick="openModal();currentSlide(8)">
                         </div> 
                         <div class="column1">
                             <img src="images/IMG_1092-150x150.jpg"
-                                 onclick="openModal();showSlides(8)">
+                                 onclick="openModal();currentSlide(9)">
                         </div>
                         <div class="column1">
                             <img src="images/014-150x150.jpg"
-                                 onclick="openModal();showSlides(9)">
+                                 onclick="openModal();currentSlide(10)">
                         </div>
                     </div>
                     
@@ -156,33 +102,84 @@
                     <div class="row1">
                         <div class="column1">
                             <img src="images/IMG_6623-150x150.jpg"
-                                 onclick="openModal();showSlides(10)">
+                                 onclick="openModal();currentSlide(11)">
                         </div> 
                         <div class="column1">
                             <img src="images/IMG_6624-150x150.jpg"
-                                 onclick="openModal();showSlides(11)">
+                                 onclick="openModal();currentSlide(12)">
                         </div>
                         <div class="column1">
                             <img src="images/IMG_6651-150x150.jpg"
-                                 onclick="openModal();showSlides(12)">
+                                 onclick="openModal();currentSlide(13)">
                         </div>
                         <div class="column1">
                             <img src="images/IMG_6658-150x150.jpg"
-                                 onclick="openModal();showSlides(13)">
+                                 onclick="openModal();currentSlide(14)">
                         </div>
                         <div class="column1">
                             <img src="images/IMG_6716-150x150.jpg"
-                                 onclick="openModal();showSlides(14)">
+                                 onclick="openModal();currentSlide(15)">
                         </div>
                     </div>
-                    
-                    
-                </div>
-            </div>
 
-        <script type="text/javascript">
-            window.onload(showSlides(0));
-        </script>
+                
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                    
+                        <div class="mySlides">
+                            <img src="images/IMG_9455.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides" >
+                            <img src="images/IMG_9456.jpg">
+                        </div> 
+                        <div class="mySlides" >
+                            <img src="images/IMG_9542.jpg">
+                        </div> 
+                        <div class="mySlides" >
+                            <img src="images/IMG_9480.jpg">
+                        </div> 
+                        <div class="mySlides" >
+                            <img src="images/IMG_9461.jpg">
+                        </div>
+                        <div class="mySlides" >
+                            <img src="images/cafe.jpg">
+                        </div>                    
+                        <div class="mySlides" >
+                            <img src="images/20120712_1103141.jpg">
+                        </div>
+                        <div class="mySlides" >
+                            <img src="images/IMG_1091.jpg">
+                        </div>
+                        <div class="mySlides" >
+                            <img src="images/IMG_1092.jpg">
+                        </div>
+                        <div class="mySlides" >
+                            <img src="images/014.jpg">
+                        </div>
+                        <div class="mySlides" >
+                            <img src="images/IMG_6623-300x225.jpg">
+                        </div>
+                        <div class="mySlides" >
+                            <img src="images/IMG_6624-300x225.jpg">
+                        </div>
+                        <div class="mySlides" >
+                            <img src="images/IMG_6651-300x225.jpg">
+                        </div>
+                        <div class="mySlides" >
+                            <img src="images/IMG_6658-300x225.jpg">
+                        </div>
+                        <div class="mySlides" >
+                            <img src="images/IMG_6716-300x225.jpg">
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
         <div id="footer">
             <p>Minister &#8210; Revd John Wiltshire: 01363 877281 / johnwiltshireringsash@gmail.com</p>

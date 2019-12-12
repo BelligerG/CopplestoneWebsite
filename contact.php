@@ -40,6 +40,9 @@ if($_POST) {
     elseif($queryType == "notice"){
         $recipient = "seannicschofield@yahoo.co.uk";
     }
+    elseif($queryType == "lifespring"){
+        $recipient = "lindsey2@talk21.com";
+    }
     elseif($queryType == "website"){
         $recipient = "chris.m.sampson@gmail.com";
     }

@@ -30,7 +30,7 @@ if($_POST) {
         $recipient = "johnwiltshireringsash@gmail.com";
     }
     elseif($queryType == "youthWork"){
-        $recipient = "sherrin.copplestonecfw@gmail.com";
+        $recipient = "hjpetherick@hotmail.co.uk";
     }
     elseif($queryType == "magazine"){
         $recipient = "lunn.family4@gmail.com";
@@ -42,10 +42,11 @@ if($_POST) {
         $recipient = "seannicschofield@yahoo.co.uk";
     }
     elseif($queryType == "lifespring"){
-        $recipient = "Lindsey2@talk21.com";
+        $recipient = "seannicschofield@yahoo.co.uk";
     }
     elseif($queryType == "website"){
-        $recipient = "chris.m.sampson@gmail.com";
+        $recipient = " Lindsey < lindsey2@talk21.com >";
+        //$recipient = "chris.m.sampson@gmail.com";
     }
     
     $message = '<div>You have been sent the following message via Copplestone Church\'s contact form.<br /><br />Sender: ' . $eAddress . '<br /><br />Please do not reply directly to this message, but to the sender (above).<br /><br /> Message:</div>';
@@ -58,9 +59,22 @@ if($_POST) {
     $headers .= 'Return-Path: ' . $siteAddress . "\r\n";
     $headers .= 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-Type: text/html; charset=ISO-8859-1' . "\r\n";
-    $headers .= 'Content-Transfer-Encoding: base64' . "\r\n\r\n";
+
+
+    if($queryType == "website"){
+       $headers = '';
+       $headers .= 'From: admin < ' . $siteAddress . " >\n" . 'Reply-To: admin < ' . $siteAddress . " >\n";
+       $headers .= 'X-Sender: admin < ' . $siteAddress . " >\n";
+       $headers .= "Cc: testsite < chris.m.sampson@gmail.com >\n";
+       $headers .= 'X-Mailer: PHP/' . phpversion();
+       $headers .= "X-Priority: 1\n"; // Urgent message!
+       $headers .= "Return-Path: chris.m.sampson@gmail.com\n"; // Return path for errors
+       $headers .= "MIME-Version: 1.0\r\n";
+       $headers .= "Content-Type: text/html; charset=iso-8859-1\n";
+    }
     
-    if(mail($recipient, "Query from website", $message, $headers)) {
+    
+    if(mail($recipient, "Query from website", wordwrap($message), $headers)) {
         echo "<p>Thank you for contacting us, $name. We will respond ASAP.</p>";
     } else {
         echo '<p>We are sorry, the email did not go through, please try again.</p>';

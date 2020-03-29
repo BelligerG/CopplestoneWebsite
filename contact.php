@@ -30,7 +30,7 @@ if($_POST) {
         $recipient = "johnwiltshireringsash@gmail.com";
     }
     elseif($queryType == "youthWork"){
-        $recipient = "hjpetherick@hotmail.co.uk";
+        $recipient = " Children and Youth < markwilliamsccy@gmail.com >";
     }
     elseif($queryType == "magazine"){
         $recipient = "lunn.family4@gmail.com";
@@ -39,7 +39,7 @@ if($_POST) {
         $recipient = "hjpetherick@hotmail.co.uk";
     }
     elseif($queryType == "notice"){
-        $recipient = "seannicschofield@yahoo.co.uk";
+        $recipient = " Notices < davidandeunice@hotmail.co.uk >";
     }
     elseif($queryType == "lifespring"){
         $recipient = "seannicschofield@yahoo.co.uk";

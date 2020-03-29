@@ -1,6 +1,75 @@
 <?php
+//https://supunkavinda.blog/php/contact-form
 
-if($_POST) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+	if (empty($_POST['eAddress'])) {
+		$emailError = 'Email is empty';
+	} else {
+		$eAddress =  str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['eAddress']);
+		if (!filter_var($eAddress, FILTER_VALIDATE_EMAIL)) {
+			$emailError = 'Invalid email';
+		}
+	}
+
+	if (empty($_POST['name'])) {
+		$nameError = 'Name is empty';
+	} else {
+		$name = $_POST['name'];
+		if (!filter_var($name, FILTER_SANITIZE_STRING)) {
+			$nameError = 'Invalid name';
+		}
+	}
+
+	if (empty($_POST['queryType'])) {
+		$queryError = 'Query is empty';
+	} else {
+		$queryType = $_POST['queryType'];
+		if (!filter_var($queryType, FILTER_SANITIZE_STRING)) {
+			$queryError = 'Invalid query';
+		}
+	}
+
+	if (empty($_POST['subject'])) {
+		$subjectError = 'Message is empty';
+	} else {
+		$subject = $_POST['subject'];
+		if (!filter_var($subject, FILTER_SANITIZE_STRING)) {
+			$subjectError = 'Invalid message';
+		}
+	}
+
+	if (empty($emailError) && empty($nameError) && empty($queryError) && empty($subjectError)) {
+		$date = date('j, F Y h:i A');
+		$siteAddress = "admin@copplestonechurch.org.uk";
+	
+
+		if($queryType == "leadership"){
+        		$recipient = "johnwiltshireringsash@gmail.com";
+        	}
+        	elseif($queryType == "youthWork"){
+        		$recipient = " Children and Youth < markwilliamsccy@gmail.com >";
+        	}
+        	elseif($queryType == "magazine"){
+        		$recipient = "lunn.family4@gmail.com";
+        	}
+        	elseif($queryType == "safeguard"){
+        		$recipient = "hjpetherick@hotmail.co.uk";
+        	}
+        	elseif($queryType == "notice"){
+        		$recipient = " Notices < davidandeunice@hotmail.co.uk >";
+        	}
+        	elseif($queryType == "lifespring"){
+        		$recipient = "seannicschofield@yahoo.co.uk";
+        	}
+        	elseif($queryType == "website"){
+        		//$recipient = " Lindsey < lindsey2@talk21.com >";
+        		$recipient = "chris.m.sampson@gmail.com";
+		}
+
+
+	}
+
 
     $name = "";
     $eAddress = "";

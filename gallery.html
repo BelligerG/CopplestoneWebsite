@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copplestone Church</title>
+    <link href="main.css" type="text/css" rel="stylesheet" />
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div id="page">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="whatson.html">What&#39;s On</a></li>
+                <li><a href="onlineservices.html">Online Services</a></li>
+                <li><a class="active" href="gallery.html">Gallery</a></li>
+                <li><a href="linksanddownloads.html">Links &#38; Downloads</a></li>
+            </ul>
+        </nav><!--end of nav-->
+        <div id="content">
+            <div id="content-top">
+                <h1>Copplestone Methodist Church</h1>
+            </div><!--end of content-top-->
+            <div class="content-white">
+                <h1>Image Gallery</h1>
+                <br>
+                <h2>Our Church</h2>
+
+                <div class="row1">
+                    <div class="column1">
+                        <img class="hover-shadow" src="images/image18.png"
+                             onclick="openModal();currentSlide(1)">
+                    </div>
+                </div>
+
+                <h2>Church Away Weekend</h2>
+
+                <div class="row1">
+                    <div class="column1">
+                        <img class="hover-shadow" src="images/IMG_9455-150x150.jpg"
+                            onclick="openModal();currentSlide(2)">
+                    </div> 
+                    <div class="column1">
+                        <img class="hover-shadow" src="images/IMG_9456-150x150.jpg"
+                            onclick="openModal();currentSlide(3)"> 
+                    </div>
+                    <div class="column1">
+                        <img class="hover-shadow" src="images/IMG_9542-150x150.jpg"
+                            onclick="openModal();currentSlide(4)">
+                    </div>
+                    <div class="column1">
+                        <img class="hover-shadow" src="images/IMG_9480-150x150.jpg"
+                            onclick="openModal();currentSlide(5)">
+                    </div> 
+                    <div class="column1">
+                        <img class="hover-shadow" src="images/IMG_9461-150x150.jpg"
+                            onclick="openModal();currentSlide(6)">
+                    </div>
+
+                </div> 
+
+                <h2>The Caf&#233;</h2>
+
+                <div class="row1">
+                    <div class="column1">
+                        <img class="hover-shadow" src="images/cafe-150x150.jpg"
+                            onclick="openModal();currentSlide(7)">
+                    </div> 
+                    <div class="column1">
+                        <img class="hover-shadow" src="images/20120712_1103141-150x150.jpg"
+                            onclick="openModal();currentSlide(8)">
+                    </div>
+                    <div class="column1">
+                        <img class="hover-shadow" src="images/IMG_1091-150x150.jpg"
+                            onclick="openModal();currentSlide(9)">
+                    </div> 
+                    <div class="column1">
+                        <img class="hover-shadow" src="images/IMG_1092-150x150.jpg"
+                            onclick="openModal();currentSlide(10)">
+                    </div>
+                    <div class="column1">
+                        <img class="hover-shadow" src="images/014-150x150.jpg"
+                            onclick="openModal();currentSlide(11)">
+                    </div>
+                </div>
+
+                <h2>Holiday Club</h2>
+
+                <div class="row1">
+                    <div class="column1">
+                        <img class="hover-shadow" src="images/IMG_6623-150x150.jpg"
+                            onclick="openModal();currentSlide(12)">
+                    </div> 
+                    <div class="column1">
+                        <img class="hover-shadow" src="images/IMG_6624-150x150.jpg"
+                            onclick="openModal();currentSlide(13)">
+                    </div>
+                    <div class="column1">
+                        <img class="hover-shadow" src="images/IMG_6651-150x150.jpg"
+                            onclick="openModal();currentSlide(14)">
+                    </div>
+                    <div class="column1">
+                        <img class="hover-shadow" src="images/IMG_6658-150x150.jpg"
+                            onclick="openModal();currentSlide(15)">
+                    </div>
+                    <div class="column1">
+                        <img class="hover-shadow" src="images/IMG_6716-150x150.jpg"
+                            onclick="openModal();currentSlide(16)">
+                    </div>
+                </div>
+
+
+            <div id="myModal" class="modalScreen">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <img src="images/church_cong.png">
+                    </div>
+                    <div class="mySlides">
+                        <img src="images/IMG_9455.jpg">
+                    </div>
+                    <div class="mySlides" >
+                        <img src="images/IMG_9456.jpg">
+                    </div> 
+                    <div class="mySlides" >
+                        <img src="images/IMG_9542.jpg">
+                    </div> 
+                    <div class="mySlides" >
+                        <img src="images/IMG_9480.jpg">
+                    </div> 
+                    <div class="mySlides" >
+                        <img src="images/IMG_9461.jpg">
+                    </div>
+                    <div class="mySlides" >
+                        <img src="images/cafe.jpg">
+                    </div>                    
+                    <div class="mySlides" >
+                        <img src="images/20120712_1103141.jpg">
+                    </div>
+                    <div class="mySlides" >
+                        <img src="images/IMG_1091.jpg">
+                    </div>
+                    <div class="mySlides" >
+                        <img src="images/IMG_1092.jpg">
+                    </div>
+                    <div class="mySlides" >
+                        <img src="images/014.jpg">
+                    </div>
+                    <div class="mySlides" >
+                        <img src="images/IMG_6623-300x225.jpg">
+                    </div>
+                    <div class="mySlides" >
+                        <img src="images/IMG_6624-300x225.jpg">
+                    </div>
+                    <div class="mySlides" >
+                        <img src="images/IMG_6651-300x225.jpg">
+                    </div>
+                    <div class="mySlides" >
+                        <img src="images/IMG_6658-300x225.jpg">
+                    </div>
+                    <div class="mySlides" >
+                        <img src="images/IMG_6716-300x225.jpg">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+        </div><!--end of content-->
+        <footer>
+            <p>Copplestone Church Safeguarding Officer  &#8210; Hannah Petherick</p>
+            <p>Address - Copplestone Methodist Church, Copplestone, Crediton, Devon, EX17 5NH</p>
+        </footer>
+
+    </div> <!--end of page-->
+    
+</body>
+</html>

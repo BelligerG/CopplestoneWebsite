@@ -345,3 +345,29 @@ img.hover-shadow {
 .thumb {
     width: 10vw;
 }
+
+#cookieConsent {
+    background-color: grey;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: Varela Round, Arial, Helvetica, sans-serif;
+    font-size: large;
+    opacity: 0;
+}
+#cookieConsent a {
+    padding: 4px;
+    border-style: solid;
+    border-radius: 10px;
+}
+#cookieConsent a:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px black;
+}
+#cookieConsent a:active {
+    box-shadow: none;
+}
